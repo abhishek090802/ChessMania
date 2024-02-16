@@ -1,10 +1,3 @@
-# ChessMania
-
-
-
-
-
-ChessMania is a website to read `Chess Articles`.
 
 ## Introduction
 
