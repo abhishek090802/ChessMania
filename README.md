@@ -1,23 +1,19 @@
 
-## Introduction
+Preview:https://chess-mania-9puy2k77x-mohitm15.vercel.app/
 
-The structure of project directory consists of two folders for front-end and back-end.
-
-- my-blog
-- my-blog-backend
-
-## Preview
-
-### Live Site 
-
-[Link](https://chess-mania-9puy2k77x-mohitm15.vercel.app/)
-
-### ScreenShots
+### Some Snapshots Of The Website->
 
 **Home Page**
 
 ![Screenshot from 2022-02-23 19-14-28](https://user-images.githubusercontent.com/35539313/155332154-17e957bf-390f-4c04-99ce-b3f9c85390d5.png)
 
+**Men's Rating Page**
+
+![vmcvscmsc](https://github.com/abhishek090802/ChessMania/assets/96616951/3157472c-6a81-4d41-8c0e-e8d222f8508e)
+
+**Womens's Rating page**
+
+![jdkjcbsks](https://github.com/abhishek090802/ChessMania/assets/96616951/ffab705e-32ce-4e69-abd1-04975fb06cba)
 
 **About Page**
 
@@ -38,35 +34,3 @@ The structure of project directory consists of two folders for front-end and bac
 ![Screenshot from 2022-02-23 19-16-19](https://user-images.githubusercontent.com/35539313/155332750-3239a093-0270-4bc7-bea2-2632be1428a1.png)
 
 
-### Pre-requisites
-
-All the dependencies are mentioned in `package.json` file of both folders.
-
-### Front-End
-
-The Front-end is based on React js.
-
-To Run the in the development mode.\
-
-- Type `npm start`
-- Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### Back-End
-
-The backend is using Express js server. _PostMan_ is used to test the api calls for addComment and upVote functionality.
-
-To Run the server.\
-
-- Go to `my-blog-backend` folder and run `npm start`
-- Starts the express server.
-- Make api calls to test the results on Postman on [http://localhost:8000/api/articles/learn-node](http://localhost:8000/api/articles/learn-node) to get data.
-
-### DataBase
-
-MongoDB is used to store the database. Follow the commands to run mongoDB service.
-
-- Open a new terminal tab.
-- Type `sudo service mongodb start`.
