@@ -1,0 +1,529 @@
+body {
+  font-family: "Unkempt", cursive;
+  font-size: 18px;
+  background-color: blueviolet;
+}
+
+button {
+  padding: 16px;
+  font-family: "Mulish", sans-serif;
+  font-size: 16px;
+  background-color: black;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+h3,
+h4 {
+  margin-bottom: 0;
+}
+
+nav {
+  text-align: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: white;
+  z-index: 0;
+  background-color: rgb(27, 19, 27);
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  padding: 10px 32px;
+  font-size: large;
+}
+
+.navbar {
+  justify-content: space-evenly !important;
+}
+
+.navbar .nav-pills >li >a {
+  color: white;
+  
+  }
+
+
+.navbar .nav-pills .active {
+font-weight:bold;
+}
+
+.App {
+  background-image: url("./assets/back.jpg");
+  background-repeat: round;
+  backface-visibility: hidden;
+}
+
+#page-body {
+  max-width: 1000px;
+  margin: auto;
+  padding-top: 64px;
+  margin-top: 2%;
+  padding-bottom: 10%;
+  padding-left: 7%;
+  padding-right: 7%;
+  background-color: white;
+  opacity: 0.9;
+}
+
+.article-list-item {
+  text-decoration: none;
+  color: black;
+  padding: 16px 0 0 0;
+}
+
+.article-list-item p {
+  padding-bottom: 32px;
+  border-bottom: 2px solid black;
+}
+
+#add-comment-form {
+  margin-top: 5%;
+  border: 2px dashed black;
+  padding: 15px;
+  background-color: rgb(214, 237, 247);
+}
+
+#add-comment-form h3 {
+  margin-bottom: 16px;
+}
+
+#add-comment-form input,
+textarea {
+  display: block;
+  width: 700px;
+  padding: 8px;
+  border-radius: 8px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 18px;
+  border: 2px solid black;
+  margin-bottom: 16px;
+}
+
+#add-comment-form button {
+  width: fit-content;
+  margin-top: 5%;
+  align-items: center;
+}
+
+.topheading {
+  text-align: center;
+	font-weight: 600;
+	font-family: 'Titillium Web', sans-serif;
+	position: relative;  
+	font-size: 36px;
+	line-height: 40px;
+	padding: 15px 15px 15px 15px;
+	color: #0f1216;
+	box-shadow: 
+		inset 0 0 0 1px rgba(12, 15, 17, 0.87), 
+		inset 0 0 5px rgba(14, 16, 20, 0.911),
+		inset -285px 0 35px white;
+	border-radius: 0 10px 0 10px;
+}
+
+
+/* Upvote section */
+#upvotes-section {
+  text-align: end;
+  margin-bottom: 5%;
+}
+
+#upvotes-section button,
+p {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+#upvotes-section p {
+  font-size: medium;
+  font-weight: 700;
+  color: rgba(14, 12, 12, 0.904);
+  font-family: "Special Elite", cursive;
+}
+
+.comment {
+  border-bottom: 2px solid black;
+  padding: 16px;
+}
+
+/* About Page */
+.about-paragraph {
+  text-align: justify;
+  font-size: large;
+  font-family: 'Love Ya Like  Sister';
+}
+.chess-setup {
+  text-align: center;
+}
+.chess-wallpaper {
+  width: 95%;
+  height: 95%;
+  padding: 2% 2% 2% 0%;
+}
+.chess-moves {
+  height: 60%;
+  width: 80%;
+  padding: 5%;
+  transition: 0.5s all ease-in-out;
+}
+
+.chess-moves:hover {
+  transform: scale(1.8);
+  overflow: hidden;
+}
+
+/* Homepage */
+
+main {
+  text-align: center;
+  max-width: 800px;
+  margin: 50px auto;
+}
+
+/* timezone */
+.timezone {
+  text-align: center;
+  text-justify: inter-word;
+  background-color: aliceblue;
+  border: 2px black dashed;
+  padding: 2%;
+  font-size: larger;
+  font-weight: 900;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-variant: inherit;
+}
+
+#timezone-input {
+  margin-top: 5%;
+}
+
+#timezone-input label {
+  text-align: center;
+  padding: 2%;
+  background-color: white;
+  color: black;
+  border-style: ridge;
+}
+
+#timezone-input input {
+  text-align: center;
+  margin: 2%;
+  background-color: white;
+  color: black;
+}
+
+.timezone-button {
+  margin-top: 3%;
+}
+
+/* Worldmap */
+
+.map {
+  border: 1px groove blue;
+  margin-bottom: 5%;
+  margin-top: 5%;
+  padding: 2%;
+}
+
+/* Lichess User Page */
+
+.profileContainer {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  padding: 2%;
+  border: 2px dashed black;
+}
+
+.titleOfUser {
+  color: red;
+  font-size: large;
+  font-weight: bold;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-transform: uppercase;
+  text-align: end;
+}
+
+.userName {
+  color: black;
+  font-size: xx-large;
+  font-weight: 800;
+  font-family: "Love Ya Like A Sister", cursive;
+  text-transform: none;
+  text-align: end;
+}
+
+.followerRow {
+  padding-top: 2%;
+  font-size: medium;
+  text-align: center;
+}
+
+.fullName {
+  color: rgb(56, 20, 27);
+  font-stretch: expanded;
+  font-variant: inherit;
+  font-weight: 600;
+}
+
+.totalGame {
+  text-align: end;
+  font-weight: 600;
+}
+
+.frontCard,
+.backCard {
+  border: 1px ridge white;
+  padding: 10% 5% 5% 5%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  font-family: "Special Elite", cursive;
+  min-height: max-content;
+  background-color: rgba(0, 0, 0, 0.849);
+  height: 200px;
+  width: 195px;
+}
+
+.frontCardFont {
+  font-size: large;
+  text-transform: uppercase;
+}
+
+.doughNutChart {
+  scale: 0.9;
+  height: 50%;
+  width: 50%;
+  margin-left: 20%;
+  padding: 2%;
+}
+
+#donutText {
+  text-align: center;
+  margin-left: 15%;
+  font-weight: 700;
+}
+
+.pieChart {
+  height: 70%;
+  width: 70%;
+  margin-left: 10%;
+  padding: 2%;
+}
+
+/*puzzle-stats*/
+
+.puzzleStreak {
+  font-size: xxx-large;
+  font-family: "Love Ya Like A Sister", cursive;
+  text-align: center;
+  margin: auto;
+  padding: 4%;
+  margin-top: 4%;
+  border-style: groove;
+}
+
+/* searchimnput */
+
+.searchInput {
+  text-align: center;
+  font-size: large;
+}
+
+/* searchbutton */
+.searchButton {
+  text-align: center;
+  font-size: x-large;
+}
+
+/* errorSection */
+.errorText {
+  text-align: center;
+  padding: 5%;
+  font-family: "Love Ya Like A Sister", cursive;
+  text-transform: capitalize;
+  color: rgb(25, 15, 27);
+  border: 2px black dashed;
+}
+
+/* Gallery Image */
+.carouselContainer {
+  padding: 4%;
+  font-weight: bolder;
+}
+
+.w-100 {
+  width: 100% !important;
+  height: 40vh;
+}
+
+/* NewGallery */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.carousel__wrap {
+  margin-top: 10%;
+  align-items: center;
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  position: relative;
+  width: 80%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.carousel__inner {
+  height: 40rem;
+  position: relative;
+  width: calc(90rem);
+}
+.carousel__container {
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+.carousel__slide-list {
+  height: 100%;
+  left: 50%;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  transform: translateX(-50%);
+  width: calc(450rem);
+}
+.carousel__slide-item {
+  display: inline-block;
+  height: 30rem;
+  margin: 0;
+  padding: 1rem;
+  position: absolute;
+  transition: all 0.3s;
+  width: 30rem;
+}
+.carousel__slide-item-img-link {
+  cursor: zoom-in;
+  display: flex;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+.carousel__slide-item-img-link img {
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.5s ease;
+  width: 100%;
+}
+.carousel__slide-item-img-link::after {
+  align-items: center;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  content: "";
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  opacity: 0;
+  position: absolute;
+  transition: all 0.5s ease;
+  width: 100%;
+}
+.carousel__slide-item-img-link:hover::after {
+  opacity: 1;
+}
+.carousel__slide-item-img-link:hover img {
+  transform: scale(1.2);
+}
+.carousel-slide-item__body {
+  bottom: -2.5rem;
+  height: 10%;
+  position: absolute;
+  text-align: left;
+}
+.carousel-slide-item__body h5 {
+  padding: 1rem;
+  text-transform: uppercase;
+  background-color: lightblue;
+}
+.carousel-slide-item__body p {
+  font-size: 1.2rem;
+  line-height: 1.3;
+  margin: 0.7rem 0 0;
+  border: 0.5px solid black;
+  padding: 2%;
+  background-color: rgba(248, 198, 206, 0.918);
+}
+.carousel__btn {
+  align-items: center;
+  background: 0;
+  border: 0;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 40%;
+  transform: translateY(-50%);
+}
+.carousel__btn--prev {
+  left: -11rem;
+}
+.carousel__btn--next {
+  right: -11rem;
+}
+.carousel__btn-arrow {
+  border: solid black;
+  border-width: 0 0.4rem 0.4rem 0;
+  height: 4rem;
+  padding: 2px;
+  width: 4rem;
+  z-index: 10;
+}
+.carousel__btn-arrow--left {
+  transform: rotate(135deg);
+}
+.carousel__btn-arrow--right {
+  transform: rotate(-45deg);
+}
+.carousel__dots {
+  display: inline-block;
+  left: 50%;
+  margin-top: 2rem;
+  position: absolute;
+  transform: translateX(-50%);
+}
+.carousel__dots .dot {
+  background: #ccc;
+  border: 0;
+  border-radius: 50%;
+  cursor: pointer;
+  height: 2rem;
+  margin: 0 0.3rem;
+  outline: none;
+  transform: scale(0.5);
+  width: 2rem;
+}
+.carousel__dots .dot.active {
+  background: black;
+}
